@@ -1,9 +1,9 @@
 {
 	"compilerOptions": {
-		"target": "es6",
+		"target": "es5",
 		"module": "commonjs",
 		"lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
-		"sourceMap": true,
+		"sourceMap": false,
 		"outDir": "./dist",
 		"moduleResolution": "node",
 		"declaration": true,
@@ -25,7 +25,7 @@
 		"skipLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
-			"*": ["node_modules", "src"]
+			"*": ["node_modules"]
 		}
 	},
 	"exclude": ["node_modules"],
