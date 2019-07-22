@@ -42,13 +42,13 @@ comes with
 
 Yarn it!
 
-```
+```bash
 yarn
 ```
 
 Or use NPM
 
-```
+```bash
 npm install
 ```
 

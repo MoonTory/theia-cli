@@ -1,11 +1,31 @@
 {
-	"name": "theia",
+	"name": "@tsuki/theia",
 	"version": "0.0.1",
-	"main": "index.js",
+	"main": "./dist/bin/index.js",
+	"description": "CLI for bootstrapping opinionated tsuki-style typescript projects, from configs to fullstack boilerplates & monorepo support!",
 	"repository": "https://github.com/MoonTory/tsuki-cli.git",
 	"author": "Gustavo Quinta | MoonTory <gustavoqnt40@gmail.com>",
 	"license": "MIT",
+	"keywords": [
+		"cli",
+		"typescript",
+		"nodejs",
+		"reactjs",
+		"eslint",
+		"bootstrap",
+		"boilerplates",
+		"tsconfig"
+	],
+	"bin": {
+		"@tsuki/theia": "./dist/bin/index.js",
+		"theia": "./dist/bin/index.js"
+	},
+	"scripts": {
+		"build": "rimraf ./dist && tsc",
+		"build:watch": "rimraf ./dist && tsc -watch"
+	},
 	"devDependencies": {
+		"@types/node": "^12.6.8",
 		"@typescript-eslint/eslint-plugin": "^1.13.0",
 		"@typescript-eslint/parser": "^1.13.0",
 		"eslint": "^6.1.0",
@@ -18,5 +38,8 @@
 		"ts-node": "^8.3.0",
 		"ts-node-dev": "^1.0.0-pre.40",
 		"typescript": "^3.5.3"
+	},
+	"dependencies": {
+		"core-js": "^3.1.4"
 	}
 }
