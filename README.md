@@ -23,10 +23,9 @@
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
+# Table of Contents
 
 - [Getting Started](#getting-started)
-  - [Disclaimer](#disclaimer)
 - [Installing](#installing)
 - [Built With](#built-with)
 - [Versioning](#versioning)
