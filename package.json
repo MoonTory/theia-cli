@@ -25,6 +25,7 @@
 		"build:watch": "rimraf ./dist && tsc -watch"
 	},
 	"devDependencies": {
+		"@types/inquirer": "^6.5.0",
 		"@types/node": "^12.6.8",
 		"@typescript-eslint/eslint-plugin": "^1.13.0",
 		"@typescript-eslint/parser": "^1.13.0",
@@ -40,6 +41,8 @@
 		"typescript": "^3.5.3"
 	},
 	"dependencies": {
-		"core-js": "^3.1.4"
+		"arg": "^4.1.1",
+		"core-js": "^3.1.4",
+		"inquirer": "^7.0.0"
 	}
 }
