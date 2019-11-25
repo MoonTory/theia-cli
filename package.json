@@ -2,7 +2,7 @@
 	"name": "@tsuki/theia",
 	"version": "0.0.1",
 	"main": "./dist/bin/index.js",
-	"description": "CLI for bootstrapping opinionated tsuki-style typescript projects, from configs to fullstack boilerplates & monorepo support!",
+	"description": "CLI for bootstrapping opinionated tsuki-style typescript projects, from tsconfigs to fullstack boilerplates & monorepo support!",
 	"repository": "https://github.com/MoonTory/tsuki-cli.git",
 	"author": "Gustavo Quinta | MoonTory <gustavoqnt40@gmail.com>",
 	"license": "MIT",
@@ -19,6 +19,9 @@
 	"bin": {
 		"@tsuki/theia": "./dist/bin/index.js",
 		"theia": "./dist/bin/index.js"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"scripts": {
 		"build": "rimraf ./dist && tsc",
