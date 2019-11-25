@@ -16,6 +16,8 @@ ormconfig.*
 *.lock
 *-lock.json
 
+**/coverage/**
+**/.nyc_output/**
 # dependencies
 /node_modules
 /node_modules/**

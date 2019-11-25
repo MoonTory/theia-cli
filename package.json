@@ -25,16 +25,23 @@
 	},
 	"scripts": {
 		"build": "rimraf ./dist && tsc",
-		"build:watch": "rimraf ./dist && tsc -watch"
+		"build:watch": "rimraf ./dist && tsc -watch",
+		"test": "mocha -r ts-node/register tests/**/*.test.ts",
+		"coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
 	},
 	"devDependencies": {
+		"@types/chai": "^4.2.5",
 		"@types/inquirer": "^6.5.0",
+		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.6.8",
 		"@typescript-eslint/eslint-plugin": "^1.13.0",
 		"@typescript-eslint/parser": "^1.13.0",
+		"chai": "^4.2.0",
 		"eslint": "^6.1.0",
 		"eslint-config-prettier": "^6.0.0",
 		"eslint-plugin-prettier": "^3.1.0",
+		"mocha": "^6.2.2",
+		"nyc": "^14.1.1",
 		"prettier": "^1.18.2",
 		"prettier-eslint": "^9.0.0",
 		"prettier-eslint-cli": "^5.0.0",
