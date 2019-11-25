@@ -14,7 +14,9 @@
 		"eslint",
 		"bootstrap",
 		"boilerplates",
-		"tsconfig"
+		"tsconfig",
+		"monorepo",
+		"yarn workspaces"
 	],
 	"bin": {
 		"@tsuki/theia": "./dist/bin/index.js",
@@ -24,8 +26,8 @@
 		"access": "public"
 	},
 	"scripts": {
-		"build": "rimraf ./dist && tsc",
-		"build:watch": "rimraf ./dist && tsc -watch",
+		"build": "rimraf ./dist && ttsc",
+		"build:watch": "rimraf ./dist && ttsc -watch",
 		"test": "mocha -r ts-node/register tests/**/*.test.ts",
 		"coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
 	},
@@ -48,6 +50,8 @@
 		"rimraf": "^2.6.3",
 		"ts-node": "^8.3.0",
 		"ts-node-dev": "^1.0.0-pre.40",
+		"ts-transformer-imports": "^0.4.3",
+		"ttypescript": "^1.5.8",
 		"typescript": "^3.5.3"
 	},
 	"dependencies": {

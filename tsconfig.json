@@ -23,10 +23,12 @@
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"skipLibCheck": true,
-		"baseUrl": ".",
+		"baseUrl": "./",
 		"paths": {
-			"*": ["node_modules"]
-		}
+			"*": ["node_modules", "src"],
+			"src/*": ["./src/*"]
+		},
+		"plugins": [{ "transform": "ts-transformer-imports" }]
 	},
 	"exclude": ["node_modules"],
 	"include": ["./src/**/*.tsx", "./src/**/*.ts"]
