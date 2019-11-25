@@ -1,3 +1,6 @@
+import { parseArgsIntoOptions } from './utils';
+
 export const cli = (args: string[]) => {
-	console.log('Hello from CLI: ', args);
+	const options = parseArgsIntoOptions(args);
+	console.log('options', options);
 };

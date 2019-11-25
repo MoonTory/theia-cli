@@ -25,7 +25,7 @@
 		"skipLibCheck": true,
 		"baseUrl": "./",
 		"paths": {
-			"*": ["node_modules", "src"],
+			"*": ["node_modules"],
 			"src/*": ["./src/*"]
 		},
 		"plugins": [{ "transform": "ts-transformer-imports" }]
