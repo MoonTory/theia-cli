@@ -1,6 +1,6 @@
 import arg from 'arg';
 
-import { IOptions } from '../../typings';
+import { IOptions } from 'src/typings';
 
 export const parseArgsIntoOptions = (rawArgs: string[]): IOptions => {
 	const args = arg(
